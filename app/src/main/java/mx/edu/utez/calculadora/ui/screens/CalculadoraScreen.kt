@@ -17,7 +17,8 @@ import mx.edu.utez.calculadora.ui.theme.CalculadoraTheme
 
 @Composable
 fun CalculadoraScreen (
-    viewModel: CalculadoraViewModel = viewModel()
+    viewModel: CalculadoraViewModel = viewModel(),
+    modifier: Modifier = Modifier
 ){
     Column(
         verticalArrangement = Arrangement.Center,

@@ -24,7 +24,8 @@ class MainActivity : ComponentActivity() {
             CalculadoraTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     CalculadoraScreen(
-                        viewModel
+                        viewModel,
+                        Modifier.padding(innerPadding)
                     )
                 }
             }
