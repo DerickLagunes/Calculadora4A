@@ -6,7 +6,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import java.util.Random
+import kotlin.random.Random
+
 
 class DadoViewModel: ViewModel() {
 
@@ -14,8 +15,7 @@ class DadoViewModel: ViewModel() {
 
     @RequiresApi(Build.VERSION_CODES.VANILLA_ICE_CREAM)
     fun tirar_dado(){
-        val r = Random()
-        resultado = r.nextInt(1,7).toString()
+        resultado = Random.nextInt(1,7).toString()
     }
 
 
