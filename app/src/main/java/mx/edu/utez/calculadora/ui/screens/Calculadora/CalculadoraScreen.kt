@@ -1,4 +1,4 @@
-package mx.edu.utez.calculadora.ui.screens
+package mx.edu.utez.calculadora.ui.screens.Calculadora
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

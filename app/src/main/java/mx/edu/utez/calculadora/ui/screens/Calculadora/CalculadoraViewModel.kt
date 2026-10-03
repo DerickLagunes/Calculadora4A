@@ -1,6 +1,5 @@
-package mx.edu.utez.calculadora.ui.screens
+package mx.edu.utez.calculadora.ui.screens.Calculadora
 
-import android.view.View
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -12,7 +11,6 @@ class CalculadoraViewModel: ViewModel() {
     var operando1 by mutableStateOf("")
     var operando2 by mutableStateOf("")
     var operador by mutableStateOf("")
-
     var texto by mutableStateOf("")
 
     //Funciones para los botones
