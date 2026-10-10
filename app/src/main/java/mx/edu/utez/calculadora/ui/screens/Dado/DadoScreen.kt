@@ -18,7 +18,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import mx.edu.utez.calculadora.R
 import mx.edu.utez.calculadora.ui.theme.CalculadoraTheme
 
-@RequiresApi(Build.VERSION_CODES.VANILLA_ICE_CREAM)
 @Composable
 fun DadoScreen(viewModel: DadoViewModel, modifier: Modifier = Modifier) {
     Column(

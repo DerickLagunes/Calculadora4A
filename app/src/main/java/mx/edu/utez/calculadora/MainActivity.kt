@@ -11,6 +11,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import mx.edu.utez.calculadora.ui.navigation.NavGraph
+import mx.edu.utez.calculadora.ui.screens.AreaTriangulo.AreaScreen
+import mx.edu.utez.calculadora.ui.screens.AreaTriangulo.AreaViewModel
 import mx.edu.utez.calculadora.ui.screens.Calculadora.CalculadoraScreen
 import mx.edu.utez.calculadora.ui.screens.Calculadora.CalculadoraViewModel
 import mx.edu.utez.calculadora.ui.screens.Dado.DadoScreen
@@ -22,16 +27,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 //        val viewModel = CalculadoraViewModel()
-        val viewModel = DadoViewModel()
+
         setContent {
             CalculadoraTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    CalculadoraScreen(
-//                        viewModel,
-//                        Modifier.padding(innerPadding)
-//                    )
-                    DadoScreen(viewModel, Modifier.padding(innerPadding))
-                }
+                val navController = rememberNavController()
+                NavGraph(navController)
             }
         }
     }
